@@ -9,6 +9,7 @@ import Faq from "./pages/hackpad/Faq.mdx";
 import Braindump from "./pages/hackpad/Braindump.mdx"
 import Resources from "./pages/hackpad/Resources.mdx"
 import GetKeycap from "./pages/hackpad/GetKeycap.mdx"
+import CardGrant from "./pages/hackpad/CardGrant.mdx"
 
 import Overview from "./pages/hackboard/Overview.mdx"
 import Faq2 from "./pages/hackboard/Faq2.mdx"
@@ -39,7 +40,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/submitting",
-    element: <DocPage Content={Submission} SideBar={ SideBar } />,
+    element: <DocPage Content={ Submission } SideBar={ SideBar } />,
   },
   {
     path: "/parts",
@@ -60,6 +61,10 @@ const router = createBrowserRouter([
   {
     path: "/get-keycap",
     element: <DocPage Content={ GetKeycap } SideBar={ SideBar } />,
+  },
+  {
+    path: "/cardgrant",
+    element: <DocPage Content={ CardGrant } SideBar={ SideBar } />,
   },
   {
     path: "/keyboard",
